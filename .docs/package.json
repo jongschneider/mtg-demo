@@ -1,0 +1,31 @@
+{
+  "name": "mtg-collection-cli",
+  "version": "1.0.0",
+  "description": "CLI tool for managing Magic: The Gathering card collections",
+  "main": "src/cli/index.ts",
+  "scripts": {
+    "cli": "tsx src/cli/index.ts",
+    "type-check": "tsc --noEmit",
+    "lint": "eslint src --ext .ts",
+    "format": "prettier --write src",
+    "format-check": "prettier --check src",
+    "check": "npm run type-check && npm run lint && npm run format-check"
+  },
+  "dependencies": {
+    "clipanion": "^4.0.0-rc.4",
+    "drizzle-orm": "^0.31.0",
+    "better-sqlite3": "^11.0.0"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.11",
+    "@types/node": "^20.0.0",
+    "drizzle-kit": "^0.22.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0",
+    "eslint": "^8.0.0",
+    "prettier": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
