@@ -16,6 +16,11 @@ A Magic: The Gathering card database application using TypeScript with Drizzle O
 ## Project Structure
 
 ```
+.docs/                    # Documentation only
+├── sqlite_data.md        # Database schema documentation
+drizzle/                  # Migration files
+drizzle.config.ts         # Drizzle Kit config
+justfile                  # Task runner commands
 src/
 ├── db/
 │   ├── index.ts          # DB client initialization
@@ -30,9 +35,8 @@ src/
 │   ├── sets.ts           # Set queries
 │   ├── collection.ts     # Collection queries
 │   └── decks.ts          # Deck queries
-├── types/
-│   └── index.ts          # Inferred types
-└── drizzle.config.ts     # Drizzle Kit config
+└── types/
+    └── index.ts          # Inferred types
 ```
 
 ## Data Model
